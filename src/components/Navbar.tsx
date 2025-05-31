@@ -32,14 +32,10 @@ export const Navbar = () => {
         </div>
 
         <div className="flex absolute right-0 gap-x-4">
-            <div className="p-2 rounded-full bg-blue-700 text-white">
+            <div className="p-2 rounded-full bg-blue-700 text-white cursor-pointer">
                 <LuPhone />
             </div>
             <div>
-                  {/* <button className="appearance-none text-sm font-poppins outline outline-blue-500 rounded-2xl px-3 py-1 hover:bg-gray-300 transition-all duration-200">
-                    Login
-                  </button> */}
-
                   <Button varient="primary" size="sm" text="Login" />
             </div>
         </div>

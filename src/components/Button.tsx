@@ -8,8 +8,8 @@ interface ButtonProps {
 }
 
 const buttonVarientsStyles = {
-  primary: "outline outline-blue-500 rounded-2xl hover:bg-gray-300",
-  secondary: "bg-indigo-600 text-white",  
+  primary: "outline outline-blue-500 text-lightBlack rounded-2xl text-sm hover:bg-gray-300",
+  secondary: "appearance-none text-sm text-white rounded-3xl bg-blue-600 hover:bg-blue-700",  
 };
 
 const buttonSizeStyle = {
@@ -18,7 +18,7 @@ const buttonSizeStyle = {
   lg: "py-3 px-5",
 };
 
-const defaultStyles = "text-sm cursor-pointer font-poppins transition-all duration-200";
+const defaultStyles = "cursor-pointer font-poppins transition-all duration-200";
 
 
 export const Button = ({ varient, size,  text, onClick }: ButtonProps) => {
