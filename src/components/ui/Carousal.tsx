@@ -11,8 +11,8 @@ const images = [
 ]
 
 export const ImageCarousal = () => {
-    const [currentIndex, setCurrentIndex] = useState(0);
 
+    const [currentIndex, setCurrentIndex] = useState(0);
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -29,7 +29,7 @@ export const ImageCarousal = () => {
                 src={images[currentIndex]}
                 alt={`Slide ${currentIndex + 1}`}
                 className="w-[350px] h-[200px] rounded-xl mx-auto bg-cover transition-all duration-700" />
-            {/* Optional: Dots */}
+            {/* Dots */}
             <div className="text-center my-4 space-x-2">
                 {images.map((_, i) => (
                     <button

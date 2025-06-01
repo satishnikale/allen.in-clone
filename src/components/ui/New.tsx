@@ -1,5 +1,9 @@
-export const New = () => {
-    return <span className="font-poppins text-sm font-bold text-white bg-[#eca944] p-1 rounded">
-        New
+interface NewProps {
+    text:string,
+}
+
+export const New = ({text}: NewProps) => {
+    return <span className="font-poppins text-[10px] text-white bg-[#ea9d30] px-1 rounded-lg uppercase">
+        {text}
     </span>
 }
