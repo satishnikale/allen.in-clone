@@ -8,7 +8,7 @@ interface NavHoverProps {
 }
 
 
-const defaultStyles = "text-sm px-2 py-2 rounded text-lightBlack flex items-center relative hover:bg-[#edf2fa] transition-all duration-200";
+const defaultStyles = "text-sm px-2 py-2 z-100 rounded text-lightBlack flex items-center relative hover:bg-[#edf2fa] transition-all duration-200";
 
 
 

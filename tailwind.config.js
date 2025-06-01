@@ -11,6 +11,7 @@ export default {
       },
       colors:{
         lightBlack: "#1e1e22",
+        lightSky: "#edf2fa",
       }
     },
   },

@@ -21,7 +21,7 @@ export const Navbar = () => {
         <div>
           <AllenIcon />
         </div>
-        <div className="">
+        <div className="hidden lg:block">
           <ul className="flex gap-x-6">
             {navItem.map((item) => (
             <NavLinks key={item.name} label={item.name} />

@@ -8,13 +8,13 @@ interface ButtonProps {
 }
 
 const buttonVarientsStyles = {
-  primary: "outline outline-blue-500 text-lightBlack rounded-2xl text-sm hover:bg-gray-300",
+  primary: "outline outline-[2px] outline-blue-500 text-lightBlack text-sm hover:bg-gray-300",
   secondary: "appearance-none text-sm text-white rounded-3xl bg-blue-600 hover:bg-blue-700",  
 };
 
 const buttonSizeStyle = {
-  sm: "py-1 px-3",
-  md: "py-2 px-4",
+  sm: "py-1 px-3 rounded-2xl",
+  md: "py-2 px-4 rounded-3xl",
   lg: "py-3 px-5",
 };
 
