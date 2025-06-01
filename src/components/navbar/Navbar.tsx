@@ -1,8 +1,7 @@
-import { AllenIcon } from "../icons/AllenIcon";
+import { AllenIcon } from "../../icons/AllenIcon";
 import { LuPhone } from "react-icons/lu";
 import { NavLinks } from "./NavLinks";
-import { Button } from "./Button";
-
+import { Button } from "../ui/Button";
 
 export const Navbar = () => {
 
