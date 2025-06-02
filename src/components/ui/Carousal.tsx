@@ -1,34 +1,30 @@
 import { useEffect, useState } from "react"
 
+interface CarousalProps {
+    images: string[],
+    height: string,
+    width:string,
+}
 
-const images = [
-    "src/assets/images/carousal-1.avif",
-    "src/assets/images/carousal-2.avif",
-    "src/assets/images/carousal-3.avif",
-    "src/assets/images/carousal-4.avif",
-    "src/assets/images/carousal-5.avif",
-
-]
-
-export const ImageCarousal = () => {
+export const ImageCarousal = ({images, height, width}: CarousalProps) => {
 
     const [currentIndex, setCurrentIndex] = useState(0);
 
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentIndex((prev) => (prev + 1) % images.length)
-        }, 4000);
+        }, 5000);
 
         return () => clearInterval(interval); // Clean up on unmount
 
     }, []);
 
     return (
-        <div className="relative w-full max-w-4xl mx-auto overflow-hidden rounded-xl">
+        <div className="relative w-full mx-auto overflow-hidden rounded-xl">
             <img
                 src={images[currentIndex]}
                 alt={`Slide ${currentIndex + 1}`}
-                className="w-[350px] h-[200px] rounded-xl mx-auto bg-cover transition-all duration-700" />
+                className={`w-[${width}] h-[${height}] rounded-xl mx-auto transition-all duration-700`} />
             {/* Dots */}
             <div className="text-center my-4 space-x-2">
                 {images.map((_, i) => (

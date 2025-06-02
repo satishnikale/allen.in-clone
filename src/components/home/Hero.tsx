@@ -3,6 +3,14 @@ import { MainContent } from "../ui/MainContent"
 import { ImageCarousal } from "../ui/Carousal";
 
 export const Hero = () => {
+
+    const image = [
+    "src/assets/images/carousal-1.avif",
+    "src/assets/images/carousal-2.avif",
+    "src/assets/images/carousal-3.avif",
+    "src/assets/images/carousal-4.avif",
+    "src/assets/images/carousal-5.avif",
+]
     return (
         <div className="w-screen h-auto bg-lightSky">
             <MainContent>
@@ -16,7 +24,7 @@ export const Hero = () => {
                         </div>
                     </div> 
                     <div className="w-full flex justify-center">
-                        <ImageCarousal />
+                        <ImageCarousal images={image} height="200px" width="350px" />
                     </div>
                 </div>
             </MainContent>
