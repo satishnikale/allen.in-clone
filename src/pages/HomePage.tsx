@@ -6,6 +6,7 @@ import { Navbar } from "../components/navbar/Navbar"
 import { Result } from "../components/home/Result"
 import { Champions } from "../components/home/Champions"
 import { Testomonial } from "../components/home/Testomonial"
+import { Contact } from "../components/home/Contact"
 // import { Advantage } from "../components/home/Advantage"
 
 export const Home = () => {
@@ -20,6 +21,7 @@ export const Home = () => {
             <Champions />
             {/* <Advantage /> */}
             <Testomonial />
+            <Contact />
 
         </div>
     )

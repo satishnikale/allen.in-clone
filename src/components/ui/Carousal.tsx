@@ -21,11 +21,11 @@ export const ImageCarousal = ({ images, height, width }: CarousalProps) => {
 
     return (
         <div className="relative w-full mx-auto overflow-hidden rounded-xl">
-            <div className="h-[200px] w-[350px] mx-auto">
+            <div className={`h-${height} w-${width} mx-auto`}>
                 <img
                     src={images[currentIndex]}
                     alt={`Slide ${currentIndex + 1}`}
-                    className={`max-w-[350px] max-h-[200px] w-[${width}] h-[${height}] rounded-xl object-fill mx-auto transition-all duration-700`} />
+                    className={`w-[${width}] h-[${height}] rounded-xl object-fill mx-auto transition-all duration-700`} />
             </div>
             {/* Dots */}
             <div className="text-center my-4 space-x-2">
