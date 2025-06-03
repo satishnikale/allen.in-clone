@@ -2,11 +2,11 @@ import { useEffect, useState } from "react"
 
 interface CarousalProps {
     images: string[],
-    height: string,
-    width:string,
+    height?: string,
+    width?: string,
 }
 
-export const ImageCarousal = ({images, height, width}: CarousalProps) => {
+export const ImageCarousal = ({ images, height, width }: CarousalProps) => {
 
     const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -21,10 +21,12 @@ export const ImageCarousal = ({images, height, width}: CarousalProps) => {
 
     return (
         <div className="relative w-full mx-auto overflow-hidden rounded-xl">
-            <img
-                src={images[currentIndex]}
-                alt={`Slide ${currentIndex + 1}`}
-                className={`w-[${width}] h-[${height}] rounded-xl mx-auto transition-all duration-700`} />
+            <div className="h-[200px] w-[350px] mx-auto">
+                <img
+                    src={images[currentIndex]}
+                    alt={`Slide ${currentIndex + 1}`}
+                    className={`max-w-[350px] max-h-[200px] w-[${width}] h-[${height}] rounded-xl object-fill mx-auto transition-all duration-700`} />
+            </div>
             {/* Dots */}
             <div className="text-center my-4 space-x-2">
                 {images.map((_, i) => (

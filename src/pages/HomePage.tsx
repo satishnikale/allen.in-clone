@@ -4,6 +4,9 @@ import { OnlineCourses } from "../components/home/OnlineCourses"
 import { ScholarshipAdd } from "../components/home/ScholarshipAdd"
 import { Navbar } from "../components/navbar/Navbar"
 import { Result } from "../components/home/Result"
+import { Champions } from "../components/home/Champions"
+import { Testomonial } from "../components/home/Testomonial"
+// import { Advantage } from "../components/home/Advantage"
 
 export const Home = () => {
     return (
@@ -14,6 +17,9 @@ export const Home = () => {
             <OnlineCourses />
             <Trending />
             <Result />
+            <Champions />
+            {/* <Advantage /> */}
+            <Testomonial />
 
         </div>
     )
