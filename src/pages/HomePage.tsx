@@ -7,6 +7,7 @@ import { Result } from "../components/home/Result"
 import { Champions } from "../components/home/Champions"
 import { Testomonial } from "../components/home/Testomonial"
 import { Contact } from "../components/home/Contact"
+import { Footer } from "../components/home/Footer"
 // import { Advantage } from "../components/home/Advantage"
 
 export const Home = () => {
@@ -22,6 +23,7 @@ export const Home = () => {
             {/* <Advantage /> */}
             <Testomonial />
             <Contact />
+            <Footer />
 
         </div>
     )

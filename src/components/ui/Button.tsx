@@ -17,7 +17,7 @@ const buttonVarientsStyles = {
 
 const buttonSizeStyle = {
   sm: "py-1 px-3 rounded-2xl",
-  md: "py-2 px-4 rounded-3xl",
+  md: "py-2 px-8 rounded-3xl",
   lg: "w-full",
 };
 
