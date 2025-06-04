@@ -6,14 +6,17 @@ import { Button } from "../ui/Button";
 export const Navbar = () => {
 
   const navItem = [
-    { name: "Courses" },
-    { name: "Test Series"},
-    { name: "Results" },
-    { name: "Study Materials" },
-    { name: "Scholarships" },
-    { name: "Books" },
-    { name: "More" },
+    { name: "Courses", subItem:["NEET", "JEE", "Class 6-10"], },
+    { name: "Test Series", subItem:[],},
+    { name: "Results", subItem:[], },
+    { name: "Study Materials", subItem:[], },
+    { name: "Scholarships", subItem:[], },
+    { name: "Books", subItem:[], },
+    { name: "More", subItem:[], },
   ];
+
+  
+
 
   return (
     <div className="w-full h-16">
@@ -24,7 +27,7 @@ export const Navbar = () => {
         <div className="hidden lg:block">
           <ul className="flex gap-x-6">
             {navItem.map((item) => (
-            <NavLinks key={item.name} label={item.name} />
+            <NavLinks key={item.name} label={item.name}  />
           ))}    
           </ul>           
             

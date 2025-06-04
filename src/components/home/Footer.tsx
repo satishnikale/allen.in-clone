@@ -1,3 +1,4 @@
+import { LuFacebook, LuInstagram, LuLinkedin, LuTwitter, LuYoutube } from "react-icons/lu"
 import { FooterLinks } from "../ui/FooterLInks"
 import { MainContent } from "../ui/MainContent"
 
@@ -40,21 +41,21 @@ const centerLinks = [
     { label: "Kota", link: "/kota" },
     { label: "Banglore", link: "/banglore" },
     { label: "Endore", link: "/endore" },
-    { label: "Delhi", link: "/delhi"},
-    { label: "More Centers", link: "/centeres"},
+    { label: "Delhi", link: "/delhi" },
+    { label: "More Centers", link: "/centeres" },
 ]
 
 const examInformationLinks = [
-    { label: "JEE Mains", link: "/onlinecourse" },
-    { label: "JEE Advanced", link: "/distacelearnig" },
-    { label: "NEET UG", link: "/onlinetestseries" },
-    { label: "CBSE", link: "/olympiads" },
-    { label: "NCERT Solutin", link: "/neettestseries" },
-    { label: "Olympiad", link: "/jeetestseris" },
-    { label: "NEET 2025 Result", link: "/jeemaintest" },
-    { label: "NEET 2025 Answer Key", link: "/neettestseries" },
-    { label: "JEE Advanced 2025 Answer Key", link: "/jeetestseris" },
-    { label: "JEE Advanced Rank Predictor", link: "/jeemaintest" },
+    { label: "JEE Mains", link: "/jeemains" },
+    { label: "JEE Advanced", link: "/jeeadvanced" },
+    { label: "NEET UG", link: "/neet" },
+    { label: "CBSE", link: "/csbe" },
+    { label: "NCERT Solutin", link: "/ncertsol" },
+    { label: "Olympiad", link: "/olympiad" },
+    { label: "NEET 2025 Result", link: "/neetresult" },
+    { label: "NEET 2025 Answer Key", link: "/neetanswerkey" },
+    { label: "JEE Advanced 2025 Answer Key", link: "/jeeanskey" },
+    { label: "JEE Advanced Rank Predictor", link: "/jeerankprector" },
 
 ]
 
@@ -69,47 +70,65 @@ export const Footer = () => {
                     <img src="src/assets/images/footer-img.avif" alt="" />
                 </div>
                 <div className="w-full h-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2">
-                    <div className="w-full h-auto fles flex-col font-sm">
+                    <div className="w-full h-auto flex flex-col font-sm">
                         {/* link - 1  */}
-                        <p className="font-poppins">About</p>
+                        <p className="font-poppins mb-2">About</p>
                         {aboutLinks.map((about) => (
                             <FooterLinks key={about.label} label={about.label} link={about.link} />
                         ))}
                     </div>
                     {/* link - 2  */}
-                    <div className="w-full h-auto fles flex-col font-sm">
-                        <p className="font-poppins">Help & Support</p>
+                    <div className="w-full h-auto flex flex-col font-sm">
+                        <p className="font-poppins mb-2">Help & Support</p>
                         {helpLinks.map((about) => (
                             <FooterLinks key={about.label} label={about.label} link={about.link} />
                         ))}
                     </div>
                     {/* link - 3 */}
-                    <div className="w-full h-auto fles flex-col font-sm">
-                        <p className="font-poppins">Popular goals</p>
+                    <div className="w-full h-auto flex flex-col font-sm">
+                        <p className="font-poppins mb-2">Popular goals</p>
                         {pupularGoals.map((goals) => (
                             <FooterLinks key={goals.label} label={goals.label} link={goals.link} />
                         ))}
                     </div>
                     {/* link - 4 */}
-                    <div className="w-full h-auto fles flex-col font-sm">
-                        <p className="font-poppins">Courses</p>
+                    <div className="w-full h-auto flex flex-col font-sm">
+                        <p className="font-poppins mb-2">Courses</p>
                         {coursesLinks.map((course) => (
                             <FooterLinks key={course.label} label={course.label} link={course.link} />
                         ))}
                     </div>
                     {/* link - 5 */}
-                    <div className="w-full h-auto fles flex-col font-sm">
-                        <p className="font-poppins">Centers</p>
+                    <div className="w-full h-auto flex flex-col font-sm">
+                        <p className="font-poppins mb-2">Centers</p>
                         {centerLinks.map((center) => (
                             <FooterLinks key={center.label} label={center.label} link={center.link} />
                         ))}
                     </div>
                     {/* link - 6 */}
-                    <div className="w-full h-auto fles flex-col font-sm">
-                        <p className="font-poppins">Exam information</p>
-                        {aboutLinks.map((about) => (
-                            <FooterLinks key={about.label} label={about.label} link={about.link} />
+                    <div className="w-full h-auto flex flex-col font-sm">
+                        <p className="font-poppins mb-2">Exam information</p>
+                        {examInformationLinks.map((info) => (
+                            <FooterLinks key={info.label} label={info.label} link={info.link} />
                         ))}
+                    </div>
+                </div>
+                {/* this div for horizontal line style  */}
+                <div className="w-full h-[1px] bg-gray-200 my-6"></div>
+                {/* bttom divs  */}
+                <div className="w-full h-auto flex justify-between items-center">
+                    <div className="w-full h-aut">
+                        <div className="flex gap-2 cursor-pointer">
+                            <LuYoutube />
+                            <LuInstagram />
+                            <LuFacebook />
+                            <LuTwitter />
+                            <LuLinkedin />
+                        </div>
+                        <p className="font-poppins text-sm text-gray-600 my-4">ALLEN Career Institute Pvt. Ltd. © All Rights Reserved.</p>
+                    </div>
+                    <div className="w-16">
+                        <img src="src/assets/images/iso-img.avif" alt="" />
                     </div>
                 </div>
             </MainContent>

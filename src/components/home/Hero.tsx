@@ -23,7 +23,7 @@ export const Hero = () => {
                             <Button text="Offline Courses" varient="primary" size="md" />
                         </div>
                     </div> 
-                    <div className="w-full flex justify-center">
+                    <div className="w-[700px] h-[300px] max-w-full flex justify-center">
                         <ImageCarousal images={image} height="200px" width="350px"  />
                     </div>
                 </div>
