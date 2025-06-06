@@ -1,16 +1,21 @@
 import { Button } from "../ui/Button"
 import { MainContent } from "../ui/MainContent"
 import { ImageCarousal } from "../ui/Carousal";
+import carousal_1 from "../../assets/images/carousal-1.avif";
+import carousal_2 from "../../assets/images/carousal-2.avif";
+import carousal_3 from "../../assets/images/carousal-3.avif";
+import carousal_4 from "../../assets/images/carousal-4.avif";
+import carousal_5 from "../../assets/images/carousal-5.avif";
 
 export const Hero = () => {
 
     const image = [
-    "src/assets/images/carousal-1.avif",
-    "src/assets/images/carousal-2.avif",
-    "src/assets/images/carousal-3.avif",
-    "src/assets/images/carousal-4.avif",
-    "src/assets/images/carousal-5.avif",
-]
+        carousal_1,
+        carousal_2,
+        carousal_3,
+        carousal_4,
+        carousal_5
+    ]
     return (
         <div className="w-screen h-auto bg-lightSky">
             <MainContent>
@@ -22,9 +27,9 @@ export const Hero = () => {
                             <Button text="Online Courses" varient="primary" size="md" />
                             <Button text="Offline Courses" varient="primary" size="md" />
                         </div>
-                    </div> 
+                    </div>
                     <div className="w-[700px] h-[300px] max-w-full flex justify-center">
-                        <ImageCarousal images={image} height="200px" width="350px"  />
+                        <ImageCarousal images={image} height="200px" width="350px" />
                     </div>
                 </div>
             </MainContent>

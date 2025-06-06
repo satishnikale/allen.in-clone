@@ -1,4 +1,3 @@
-import { NavHover } from "../courses/NavHover";
 
 interface NavLinkProps {
   label: string,
