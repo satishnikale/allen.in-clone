@@ -13,7 +13,7 @@ export const ResultCard = ({
 }: ResultCardProps) => {
   return (
     <div
-      className={`w-full h-auto bg-white p-8 space-y-10 rouded rounded ${
+      className={`w-full h-auto bg-white p-6 space-y-10 rouded rounded ${
         roundedLeft ? "rounded-l-3xl" : ""
       }
         ${roundedRight ? "rounded-r-3xl" : ""}
