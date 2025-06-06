@@ -6,7 +6,7 @@ export const Champions = () => {
         <div className="w-full h-auto bg-lightSky py-10">
             <MainContent>
                 <h1 className="w-full text-center font-poppins text-3xl font-medium mb-8">Meet our Champions</h1>
-                <img src={ChampImg} alt="" />
+                <img src={ChampImg} alt="" loading="lazy" />
             </MainContent>
         </div>
     )

@@ -7,7 +7,7 @@ export const ScholarshipAdd = () => {
 
             <div className="h-full flex justify-center items-center bg-[#019370] cursor-pointer gap-2 py-2">
                 <div className="mx-2">
-                    <img className="h-7 w-7" src={announcement} alt="" />
+                    <img className="h-7 w-7" src={announcement} alt="" loading="lazy" />
                 </div>
 
                 <div className="w-auto flex flex-col lg:flex-row lg:gap-2">

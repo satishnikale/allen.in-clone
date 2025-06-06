@@ -10,7 +10,7 @@ export const Contact = () => {
                 <div className="hidden lg:flex flex-col justify-center items-center">
                     <img
                         className="w-[400px]"
-                        src="src/assets/images/contact-img.avif" alt="" />
+                        src="src/assets/images/contact-img.avif" alt="" loading="lazy" />
                 </div>
                 {/* right div contact card  */}
                 <div className="w-full h-auto p-4  bg-lightSky rounded-xl shadow-lg">

@@ -13,7 +13,7 @@ export const Trending = () => {
       <MainContent>
         <div className="h-full w-full">
             <div className="py-10">
-                <img src="src/assets/images/rankers-img-homepage.avif" alt="" />
+                <img src="src/assets/images/rankers-img-homepage.avif" alt="" loading="lazy" />
             </div>
           <div>
             <h1 className="font-poppins text-center text-2xl font-medium py-10">

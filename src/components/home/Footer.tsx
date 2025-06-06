@@ -67,7 +67,7 @@ export const Footer = () => {
         <div className="w-full h-auto bg-lightSky py-10">
             <MainContent>
                 <div className="w-full h-full py-10">
-                    <img src="src/assets/images/footer-img.avif" alt="" />
+                    <img src="src/assets/images/footer-img.avif" alt="" loading="lazy" />
                 </div>
                 <div className="w-full h-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2">
                     <div className="w-full h-auto flex flex-col font-sm">
@@ -128,7 +128,7 @@ export const Footer = () => {
                         <p className="font-poppins text-sm text-gray-600 my-4">ALLEN Career Institute Pvt. Ltd. © All Rights Reserved.</p>
                     </div>
                     <div className="w-16">
-                        <img src="src/assets/images/iso-img.avif" alt="" />
+                        <img src="src/assets/images/iso-img.avif" alt="" loading="lazy" />
                     </div>
                 </div>
             </MainContent>
