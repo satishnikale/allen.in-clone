@@ -2,12 +2,14 @@ import { ImageCarousal } from "../ui/Carousal";
 import { MainContent } from "../ui/MainContent";
 
 export const Trending = () => {
+
   const images = [
     "src/assets/images/trending-img-1.avif",
     "src/assets/images/trending-img-2.avif",
     "src/assets/images/trending-img-3.avif",
     "src/assets/images/trending-img-4.avif",
   ];
+  
   return (
     <div className="w-full h-auto bg-lightSky">
       <MainContent>

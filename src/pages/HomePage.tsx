@@ -8,7 +8,7 @@ import { Champions } from "../components/home/Champions"
 import { Testomonial } from "../components/home/Testomonial"
 import { Contact } from "../components/home/Contact"
 import { Footer } from "../components/home/Footer"
-// import { Advantage } from "../components/home/Advantage"
+import { Advantage } from "../components/home/Advantage"
 
 export const Home = () => {
     return (
@@ -20,7 +20,7 @@ export const Home = () => {
             <Trending />
             <Result />
             <Champions />
-            {/* <Advantage /> */}
+            <Advantage />
             <Testomonial />
             <Contact />
             <Footer />
