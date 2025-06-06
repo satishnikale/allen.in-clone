@@ -1,6 +1,7 @@
 import { Button } from "../ui/Button"
 import { Input } from "../ui/Input"
 import { MainContent } from "../ui/MainContent"
+import contact_img from "../../assets/images/contact-img.avif";
 
 export const Contact = () => {
     return (
@@ -10,7 +11,7 @@ export const Contact = () => {
                 <div className="hidden lg:flex flex-col justify-center items-center">
                     <img
                         className="w-[400px]"
-                        src="src/assets/images/contact-img.avif" alt="" loading="lazy" />
+                        src={contact_img} alt="" loading="lazy" />
                 </div>
                 {/* right div contact card  */}
                 <div className="w-full h-auto p-4  bg-lightSky rounded-xl shadow-lg">

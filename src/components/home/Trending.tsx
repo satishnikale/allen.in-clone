@@ -1,13 +1,17 @@
 import { ImageCarousal } from "../ui/Carousal";
 import { MainContent } from "../ui/MainContent";
+import trending_1 from "../../assets/images/trending-img-1.avif";
+import trending_2 from "../../assets/images/trending-img-2.avif";
+import trending_3 from "../../assets/images/trending-img-3.avif";
+import trending_4 from "../../assets/images/trending-img-4.avif";
 
 export const Trending = () => {
 
   const images = [
-    "src/assets/images/trending-img-1.avif",
-    "src/assets/images/trending-img-2.avif",
-    "src/assets/images/trending-img-3.avif",
-    "src/assets/images/trending-img-4.avif",
+    trending_1,
+    trending_2,
+    trending_3,
+    trending_4
   ];
   
   return (

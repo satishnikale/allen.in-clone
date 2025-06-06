@@ -1,6 +1,8 @@
 import { LuFacebook, LuInstagram, LuLinkedin, LuTwitter, LuYoutube } from "react-icons/lu"
-import { FooterLinks } from "../ui/FooterLInks"
-import { MainContent } from "../ui/MainContent"
+import { FooterLinks } from "../ui/FooterLInks";
+import { MainContent } from "../ui/MainContent";
+import footer_img from "../../assets/images/footer-img.avif";
+import iso_img from "../../assets/images/iso-img.avif";
 
 const aboutLinks = [
     { label: "About Us", link: "/about" },
@@ -67,7 +69,7 @@ export const Footer = () => {
         <div className="w-full h-auto bg-lightSky py-10">
             <MainContent>
                 <div className="w-full h-full py-10">
-                    <img src="src/assets/images/footer-img.avif" alt="" loading="lazy" />
+                    <img src={footer_img} alt="" loading="lazy" />
                 </div>
                 <div className="w-full h-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2">
                     <div className="w-full h-auto flex flex-col font-sm">
@@ -128,7 +130,7 @@ export const Footer = () => {
                         <p className="font-poppins text-sm text-gray-600 my-4">ALLEN Career Institute Pvt. Ltd. © All Rights Reserved.</p>
                     </div>
                     <div className="w-16">
-                        <img src="src/assets/images/iso-img.avif" alt="" loading="lazy" />
+                        <img src={iso_img} alt="" loading="lazy" />
                     </div>
                 </div>
             </MainContent>

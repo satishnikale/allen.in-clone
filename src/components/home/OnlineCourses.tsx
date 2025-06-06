@@ -1,5 +1,8 @@
 import { MainContent } from "../ui/MainContent";
 import { CourseCard } from "../ui/CourseCard";
+import jee from "../../assets/images/jee-img-1.png";
+import neet from "../../assets/images/jee-img-1.png";
+import class6to10 from "../../assets/images/jee-img-1.png";
 
 export const OnlineCourses = () => {
   
@@ -13,15 +16,15 @@ export const OnlineCourses = () => {
         <div className="w-full grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           <CourseCard 
           text="JEE" 
-          bgImageSrc="src/assets/images/jee-img-1.png" 
+          bgImageSrc={jee} 
           />
           <CourseCard
             text="NEET"
-            bgImageSrc="src/assets/images/neet-img-1.png"
+            bgImageSrc={neet}
           />
           <CourseCard
             text="Class 6-10"
-            bgImageSrc="src/assets/images/class-img-6-10.png"
+            bgImageSrc={class6to10}
           />
         </div>
       </div>

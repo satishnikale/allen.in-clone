@@ -1,5 +1,6 @@
 import { AdvantageCard } from "../ui/AdvantageCard";
 import { MainContent } from "../ui/MainContent";
+import accordion_1 from "../../assets/images/accordion-1.avif";
 
 export const Advantage = () => {
   return (
@@ -29,7 +30,7 @@ export const Advantage = () => {
           <div className="flex flex-col justify-center items-center">
             <img
             className="w-[526px] h-[329px] hidden lg:block"
-            src="src/assets/images/accordion-1.avif" alt="" />
+            src={accordion_1} alt="" />
           </div>
         </div>
       </div>

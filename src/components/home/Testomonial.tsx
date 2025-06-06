@@ -1,8 +1,10 @@
 import { useState } from "react";
 import { TestomonialCard } from "../ui/TestomonialCard";
 import { LuChevronLeft, LuChevronRight } from "react-icons/lu";
-
-// overflow-x:scroll white-space: nowrap z-10
+import topper_1 from "../../assets/images/topper-1.webp";
+import topper_2 from "../../assets/images/topper-2.webp";
+import topper_3 from "../../assets/images/topper-3.webp";
+import topper_4 from "../../assets/images/topper-4.webp";
 
 export const Testomonial = () => {
   const [right, setRight] = useState(false);
@@ -24,25 +26,25 @@ export const Testomonial = () => {
           <TestomonialCard
             text="I chose ALLEN Online Courses because I wanted to balance my NEET prep with my school schedule.
             The course structure, from daily homework to post-class handouts, was well-organized."
-            image="src/assets/images/topper-1.webp"
+            image={topper_1}
             name="SARTH PATIL"
             score="NEET-UG 2024, Score 710/720"
           />
           <TestomonialCard
             text="I took NEET in 2023 but didn’t achieve my desired score, so I reattempted in 2024 with ALLEN Online Courses. The top-quality faculty, study material, & personalised experience on the ALLEN app helped me improve my score."
-            image="src/assets/images/topper-2.webp"
+            image={topper_2}
             name="SEKH GALIB RAZA"
             score="NEET-UG 2024, Score 690/720"
           />
           <TestomonialCard
             text="I wanted to stay with my family while preparing for JEE, so I chose ALLEN Online Courses. The faculty was great & the live classes, daily homework & test series helped me secure a great score & rank!"
-            image="src/assets/images/topper-3.webp"
+            image={topper_3}
             name="AVIK DAS"
             score="JEE Adv. 2024, AIR 69"
           />
           <TestomonialCard
             text="I came to know about ALLEN’s Online Test Series from my senior in school. The tests are really awesome as these are based mainly on NCERT and cover almost all types of NEET questions. They gave me the real feel of the competition."
-            image="src/assets/images/topper-4.webp"
+            image={topper_4}
             name="SHIFA FATIMA"
             score="NEET-UG 2024, Score 696/720"
           />
