@@ -9,9 +9,9 @@ export const Advantage = () => {
           ALLEN App Advantages
         </h1>
         {/* main div  */}
-        <div className="grid lg:grid-cols-2">
+        <div className="w-full grid lg:grid-cols-2">
           {/* left div  */}
-          <div>
+          <div className="w-full lg:w-96">
             <AdvantageCard
               heading="400 Lakh+ Questions Practised"
               text="Boost your score with practice! Pick topics & difficulty level, and let AI target your weak areas"
@@ -26,7 +26,11 @@ export const Advantage = () => {
             />
           </div>
           {/* right div  */}
-          <div>images</div>
+          <div className="flex flex-col justify-center items-center">
+            <img
+            className="w-[526px] h-[329px] hidden lg:block"
+            src="src/assets/images/accordion-1.avif" alt="" />
+          </div>
         </div>
       </div>
     </MainContent>
