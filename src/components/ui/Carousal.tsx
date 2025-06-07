@@ -21,7 +21,7 @@ export const ImageCarousal = ({ images, height, width }: CarousalProps) => {
 
     return (
         <div className="relative w-full mx-auto overflow-hidden rounded-xl">
-            <div className={`h-${height}px w-${width}px mx-auto`}>
+            <div className={`h-[${height}px] w-[${width}px] mx-auto`}>
                 <img
                     src={images[currentIndex]}
                     alt={`Slide ${currentIndex + 1}`}

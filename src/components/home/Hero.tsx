@@ -29,7 +29,7 @@ export const Hero = () => {
                         </div>
                     </div>
                     <div className="w-[700px] h-[300px] max-w-[350px] flex justify-center items-center mx-auto">
-                        <ImageCarousal images={image} height={200} width={350} />
+                        <ImageCarousal images={image} height={200} width={100} />
                     </div>
                 </div>
             </MainContent>
