@@ -19,17 +19,17 @@ export const Hero = () => {
     return (
         <div className="w-screen h-auto bg-lightSky">
             <MainContent>
-                <div className="w-full h-auto font-poppins lg:flex justify-between gap-x-8 py-10">
+                <div className="w-full h-auto font-poppins lg:flex justify-between gap-x-8 py-4">
                     <div className="w-full">
                         <h1 className="w-auto text-center lg:text-left text-3xl block font-semibold mt-4 mb-8">Get up to 90% scholarship on ALLEN Courses</h1>
                         <h2 className="text-xl font-semibold my-4 text-center lg:text-left">Register for scholarship</h2>
-                        <div className="flex justify-center gap-x-4 mb-5 lg:justify-start">
+                        <div className="w-full flex justify-center gap-x-2 lg:justify-start mt-6">
                             <Button text="Online Courses" varient="primary" size="md" />
                             <Button text="Offline Courses" varient="primary" size="md" />
                         </div>
                     </div>
-                    <div className="w-[700px] h-[300px] max-w-full flex justify-center">
-                        <ImageCarousal images={image} height="200px" width="350px" />
+                    <div className="w-[700px] h-[300px] max-w-[350px] flex justify-center items-center mx-auto">
+                        <ImageCarousal images={image} height={200} width={350} />
                     </div>
                 </div>
             </MainContent>

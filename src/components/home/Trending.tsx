@@ -19,14 +19,16 @@ export const Trending = () => {
       <MainContent>
         <div className="h-full w-full">
             <div className="py-10">
-                <img src="src/assets/images/rankers-img-homepage.avif" alt="" loading="lazy" />
+                <img 
+                className="w-full h-[200px] sm:h-full"
+                src="src/assets/images/rankers-img-homepage.avif" alt="" loading="lazy" />
             </div>
           <div>
             <h1 className="font-poppins text-center text-2xl font-medium py-10">
               What's Trending
             </h1>
             <div className="w-full rounded-xl pb-8">
-              <ImageCarousal images={images} height="256px" width="1080px" />
+              <ImageCarousal images={images} />
             </div>
           </div>
         </div>
