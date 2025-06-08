@@ -7,7 +7,7 @@ import topper_3 from "../../assets/images/topper-3.webp";
 import topper_4 from "../../assets/images/topper-4.webp";
 
 export const Testomonial = () => {
-  const [right, setRight] = useState(true);
+  const [right, setRight] = useState(false);
   return (
     <div className="w-full h-auto bg-lightSky pt-10 pb-10">
       <div className="w-full max-w-[1080px] mx-auto flex items-center lg:justify-self-start relative">
