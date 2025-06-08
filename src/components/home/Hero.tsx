@@ -19,7 +19,7 @@ export const Hero = () => {
     return (
         <div className="w-screen h-auto bg-lightSky">
             <MainContent>
-                <div className="w-full h-auto font-poppins lg:flex justify-between gap-x-8 py-4">
+                <div className="w-full h-auto font-poppins lg:flex justify-between gap-x-8">
                     <div className="w-full">
                         <h1 className="w-auto text-center lg:text-left text-3xl block font-semibold mt-4 mb-8">Get up to 90% scholarship on ALLEN Courses</h1>
                         <h2 className="text-xl font-semibold my-4 text-center lg:text-left">Register for scholarship</h2>

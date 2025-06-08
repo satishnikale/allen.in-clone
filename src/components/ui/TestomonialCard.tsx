@@ -10,7 +10,7 @@ interface TestomonialCardProps {
 
 export const TestomonialCard = ({ text, image, name, score }: TestomonialCardProps) => {
     return (
-        <div className="w-[300px] min-w-[300px] h-auto px-6 bg-white rounded-2xl relative font-poppins text-sm space-y-8 shadow-lg">
+        <div className="w-[300px] min-w-[300px] h-auto px-6 bg-white rounded-2xl relative font-poppins text-[13px] space-y-8 shadow-lg">
             <div>
                 <img className="absolute -top-4 left-10 w-14" src="src/assets/images/testomonial-bg.svg" alt="" />
                 <p className="pt-10 text-gray-600">{text}</p>

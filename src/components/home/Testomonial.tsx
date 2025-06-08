@@ -13,9 +13,9 @@ export const Testomonial = () => {
       <div className="w-full max-w-[1080px] mx-auto flex items-center lg:justify-self-start relative">
         <h1 className="w-full text-2xl font-poppins font-medium px-2 text-center">Testimonials from our students</h1>
         <div className="hidden lg:flex lg:block absolute right-0 gap-6">
-          <LuChevronLeft onClick={()=> setRight(false)} size={35}
+          <LuChevronLeft onClick={()=> setRight(false)} size={30}
           className={`p-1 hover:bg-gray-300 rounded-full ${right? "text-gray-500" : "text-black"}`} />
-          <LuChevronRight onClick={ ()=> setRight(true) } size={35}
+          <LuChevronRight onClick={ ()=> setRight(true) } size={30}
           className={`p-1 hover:bg-gray-300 rounded-full ${right? "text-black" : "text-gray-500"}`} />        
         </div>
 
