@@ -4,7 +4,6 @@ import { NavLinks } from "./NavLinks";
 import { Button } from "../ui/Button";
 import { useState } from "react";
 import { HiOutlineX } from "react-icons/hi";
-import { BiChevronDown } from "react-icons/bi";
 import { Sidebar } from "../ui/Sidebar";
 
 export const Navbar = () => {
