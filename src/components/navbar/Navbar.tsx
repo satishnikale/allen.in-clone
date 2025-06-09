@@ -1,9 +1,15 @@
 import { AllenIcon } from "../../icons/AllenIcon";
-import { LuChevronRight, LuHeadphones, LuHouse, LuPhone } from "react-icons/lu";
+import { LuChevronRight, LuHeadphones, LuHouse, LuMenu, LuPhone } from "react-icons/lu";
 import { NavLinks } from "./NavLinks";
 import { Button } from "../ui/Button";
+import { useState } from "react";
+import { HiOutlineX } from "react-icons/hi";
+import { BiChevronDown } from "react-icons/bi";
+import { Sidebar } from "../ui/Sidebar";
 
 export const Navbar = () => {
+
+  const [ isOpen, setIsOpen ] = useState(false);
 
   const navItem = [
     { name: "Courses", subItem: ["NEET", "JEE", "Class 6-10", "View All Options"], },
@@ -12,13 +18,16 @@ export const Navbar = () => {
     { name: "Study Materials", subItem: ["JEE Mian", "JEE Advanced", "NEET", "NCERT Solution", "CBSE", "Olympiad"], },
     { name: "Scholarships", subItem: ["TALENTEX", "AOSAT"], },
     { name: "Books", subItem: ["ALLEN e-Store"], },
-    { name: "More", subItem: ["ALLEN For Schools", "About ALLEN", "Blogs", "Newa", "Carrier"], },
+    { name: "More", subItem: ["ALLEN For Schools", "About ALLEN", "Blogs", "New", "Carrier"], },
   ];
 
   return (
     <div className="w-full h-16">
       <div className="w-[97%] h-full mx-auto flex items-center gap-x-8 relative">
-        <div>
+        <div className="flex items-center gap-2">
+          <LuMenu size={22} className="lg:hidden" onClick={ () => {
+            setIsOpen(!isOpen);
+          } } />
           <AllenIcon />
         </div>
         <div className="hidden lg:block">
@@ -55,8 +64,25 @@ export const Navbar = () => {
           <div>
             <Button varient="primary" size="sm" text="Login" />
           </div>
-        </div>
+        </div>        
       </div>
+      {/* Hamberger Menu on small devices  */}
+        {isOpen && <div className="h-full w-[70%] bg-lightSky absolute left-0 top-0 z-50 overflow-y-auto">
+          <div className="flex flex-col">
+           <div className="flex items-center justify-between px-4 py-8 shadow ">
+            <AllenIcon />
+            <HiOutlineX size={22} onClick={ () => {
+              setIsOpen(!isOpen)
+            } } />
+           </div>
+           <div className="flex flex-col">
+            {navItem.map((item) => (
+              <Sidebar label={item.name} subItem={item.subItem} />
+            ))}
+           </div>
+           <button className="absolute left-4 bottom-4 text-[13px] font-poppins font-semibold text-blue-700 z-50">Login</button>
+          </div>
+        </div> }
     </div>
   );
 };
